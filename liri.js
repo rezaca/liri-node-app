@@ -31,7 +31,7 @@ function liri(){
 // spotify client secret: 7cce47d402f04776b20398e10b019ca0
     else if (process.argv[2] === 'spotify-this-song'){
         var Spotify = require('node-spotify-api');
-        var userRequest = process.argv[3];
+        // var userRequest = process.argv[3];
         
         var spotify = new Spotify({
          id: 'a2e1756ea77841c29579ac36110c5e9d',
@@ -41,7 +41,7 @@ function liri(){
        spotify
        .request("https://api.spotify.com/v1/search?q=tania%20bowra&type=artist")
        .then(function(data) {
-         console.log(data.items); 
+         console.log(data); 
        })
        .catch(function(err) {
          console.error('Error occurred: ' + err); 
