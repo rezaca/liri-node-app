@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rezaca/liri-node-app#readme",
   "dependencies": {
     "hapi": "^17.4.0",
+    "hoek": "^5.0.3",
     "i": "^0.3.6",
     "node-spotify-api": "^1.0.7",
     "request": "^2.83.0",
